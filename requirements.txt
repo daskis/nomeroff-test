@@ -11,8 +11,6 @@ pillow
 tqdm
 matplotlib
 scipy
-torch>=1.12
-torchvision>=0.13
 PyYAML>=5.4
 seaborn
 pytorch_lightning==1.8.6
@@ -24,7 +22,13 @@ ultralytics>=8.3.12
 albumentations
 
 # git repos
-#upscaler @ git+https://github.com/ria-com/upscaler.git
+upscaler @ git+https://github.com/ria-com/upscaler.git
 craft_text_detector @ git+https://github.com/ria-com/craft-text-detector.git
 PyTurboJPEG @ git+https://github.com/lilohuang/PyTurboJPEG.git
 modelhub_client @ git+https://github.com/ria-com/modelhub-client.git
+
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch
+torchvision
+torchaudio
+torchcodec
